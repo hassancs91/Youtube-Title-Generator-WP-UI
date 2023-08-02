@@ -1,0 +1,41 @@
+<style>
+    .message-box { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; }
+.message-content { background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+#message-close { cursor: pointer; background: none; border: none; color: #2980b9; }
+.results { display: flex; flex-direction: column; padding: 15px; overflow-y: auto; height: 400px; }
+.card {position: relative; margin-bottom: 10px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease; }
+.card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+#text-generation-tool { width: 100%; max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; }
+#topic { width: 100%; padding: 15px; margin-bottom: 20px; font-size: 16px; border-radius: 5px; border: 1px solid #ddd; }
+#generate-button, #copy-button { display: block; width: 100%; padding: 15px; margin-bottom: 20px; font-size: 21px; font-family: Poppins, sans-serif; border: none; border-radius: 5px; color: #fff; cursor: pointer; transition: background-color 0.3s ease; }
+#generate-button { background-color: #0D2451; }
+#generate-button:hover, #copy-button:hover { background-color: #2980b9; }
+#result-container, .loader { display: none; margin-bottom: 20px; }
+.copy-button-container { margin-top: 10px; text-align: right; }
+#copy-button { padding: 8px 12px; font-size: 14px; border: none; border-radius: 5px; color: #fff; background-color: #3498db; cursor: pointer; display: inline-block; transition: background-color 0.3s ease; }
+.loader { margin: 50px auto; border: 16px solid #f3f3f3; border-top: 16px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+
+.copy-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+.tiny-copy-icon {
+    cursor: pointer;
+    color: #2980b9;
+    transition: color 0.3s ease;
+}
+
+.tiny-copy-icon:hover {
+    color: #3498db;
+}
+
+
+
+</style>

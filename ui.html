@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<div id="text-generation-tool">
+    <input type="text" id="topic" placeholder="Describe your video in few words..." maxlength="100">
+    <button id="generate-button">Generate Titles!</button>
+    <div id="result-container">
+        <div class="result-wrapper">
+            <div class="result-content">
+                <div id="result" class="results"></div>
+            </div>
+            <div class="copy-button-container">
+                <button id="copy-button">Copy All</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="loader"></div>
+</div>
+
+<div id="message-box" class="message-box" style="display: none;">
+    <div class="message-content">
+        <span id="message-text"></span>
+        <button id="message-close">Close</button>
+    </div>
+</div>
